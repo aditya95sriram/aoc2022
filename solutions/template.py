@@ -20,6 +20,10 @@ def enum(*args, **kwargs):
 def solve(input_fname):
     lines = []
     with open(input_fname) as ifile:
+        def ri(): 
+            return int(ifile.readline().strip())
+        def ris(): 
+            return list(map(int, ifile.readline().strip().split()))
         for line in ifile:
             lines.append(line.strip())
 
